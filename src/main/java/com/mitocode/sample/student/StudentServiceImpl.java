@@ -39,6 +39,11 @@ public class StudentServiceImpl implements StudentService {
             throw new ApiRequestException(student.getEmail() + " is not valid");
         }*/
 
+        System.out.println("Cambio ws");
+        System.out.println("Cambio ws");
+        System.out.println("Cambio ws");
+        System.out.println("Cambio ws");
+
         if (studentDataAccessService.isEmailTaken(student.getEmail())) {
             throw new ApiRequestException(student.getEmail() + " is taken");
         }
